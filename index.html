@@ -1,11 +1,115 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator BMI</title>
+    <script src="https://kit.fontawesome.com/cbcc2cb107.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto&family=Tektur:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <br><br><br>
     
+    <div class="menu">
+        <h4> Kalkulator BMI </h4>
+        <br>
+        <h4 class="jikaa">
+           little filling
+        </h4>
+        <i class="fab fa-youtube" onclick="window.location.href='https://youtube.com/'"></i>
+        <i class="fab fa-instagram" onclick="window.location.href='https://instagram.com/'"></i>
+        <i class="fab fa-github" onclick="window.location.href='https://github.com/blackno0001'"></i>
+    </div>
+    
+    <div class="cont">
+        <div onclick="secmale()" id="male">
+            <br>
+            <i class="fas fa-male"></i>
+            <p>Laki-Laki</p>
+        </div>
+        <div onclick="secfemale()" id="female">
+            <br>
+            <i class="fas fa-female"></i>
+            <p>Wanita</p>
+        </div>
+    </div>
+    
+    <div class="altu">
+        <h4>Tinggi Badan</h4>
+        <h2 id="contador">
+            192cm
+        </h2>
+        <input type="range" id="rang" max="300">
+    </div>
+
+    <div class="cont">
+        <div>
+            <h4>
+                Berat Badan (kg)
+            </h4>
+            <input type="number" id="peso" class="entrada">
+            <br>
+        </div>
+        <div>
+            <h4>
+                Usia
+            </h4>
+            <input type="number" id="edad" class="entrada">
+            <br>
+        </div>
+    </div>
+
+    <div class="centrar" onclick="calcular()">
+        <button>
+            Hitung BMI Anda
+        </button>
+    </div>
+
+    <div id="circulo">
+        <h2 id="bmitotal">
+            0.0
+        </h2>
+    </div>
+    <h3 id="sobrepeso">
+        Normal
+    </h3>
+
+    <br><br>
+    
+    <!-- Tabel Penjelasan BMI -->
+    <div class="table-container">
+        <h4 class="hahahaha">Tabel BMI</h4>
+        <table>
+            <tr>
+                <th>BMI</th>
+                <th>Status Berat Badan</th>
+            </tr>
+            <tr>
+                <td>&lt; 18.5</td>
+                <td>Kekurangan Berat Badan</td>
+            </tr>
+            <tr>
+                <td>18.5 - 24.9</td>
+                <td>Normal</td>
+            </tr>
+            <tr>
+                <td>25.0 - 29.9</td>
+                <td>Kelebihan Berat Badan</td>
+            </tr>
+            <tr>
+                <td>30.0+</td>
+                <td>Obesitas</td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br>
+    <p class="nomore">
+            BMI (Body Mass Index) adalah cara untuk mengukur apakah berat badan seseorang berada dalam kategori yang sehat berdasarkan tinggi badan dan berat badan mereka. BMI dihitung dengan membagi berat badan (kg) dengan kuadrat tinggi badan (m²).
+        </p>
+    <script src="script.js"></script>    
 </body>
 </html>
